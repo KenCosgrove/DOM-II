@@ -5,6 +5,7 @@ const copyright = document.querySelector(".footer");
 const buttons = document.querySelector(".btn");
 const content = document.querySelector(".text-content");
 const destination = document.querySelector(".content-destination");
+const inverse = document.querySelector(".content-section.inverse-content p");
 
 nav.addEventListener("mouseover", () => {
   nav.style.backgroundColor = "red";
@@ -30,4 +31,8 @@ window.addEventListener("load", (event) => {
 
 window.addEventListener("resize", () => {
   destination.style.backgroundColor = "yellow";
+});
+
+buttons.addEventListener("dblclick", () => {
+  buttons.style.backgroundColor = "pink";
 });
